@@ -1,10 +1,11 @@
 function LexiconController ($http) {
+    const ctrl = this;
     const API = '../database/lexicon.json';
+    this.lexicon = [];
     $http
         .get(API)
         .then(function (response) {
-            console.log(response.data);
-            this.result = response.data;
+            ctrl.lexicon = response.data.entries;
         });
     this.entry = [
         {

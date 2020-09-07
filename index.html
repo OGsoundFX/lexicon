@@ -15,8 +15,7 @@
     <div class="container">
         <div ng-controller="LexiconController as ctrl">
             <!-- <input type="text" ng-model=""> -->
-            <p> {{ ctrl.result }} </p>
-            <div ng-repeat="entry in ctrl.result">
+            <div ng-repeat="entry in ctrl.lexicon">
                 <ul>
                 <li> <h3> {{ entry.title }} </h3> </li>
                 </ul>
