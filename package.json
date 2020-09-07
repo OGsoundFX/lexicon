@@ -1,0 +1,19 @@
+{
+  "name": "lexicon",
+  "version": "1.0.0",
+  "description": "a simple lexicon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OGsoundFX/lexicon.git"
+  },
+  "author": "Olivier Girardot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OGsoundFX/lexicon/issues"
+  },
+  "homepage": "https://github.com/OGsoundFX/lexicon#readme"
+}
