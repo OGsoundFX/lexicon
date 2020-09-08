@@ -12,6 +12,9 @@
         <h1>My Lexicon</h1>
     </div>
 
+    <div class="container" ng-controller="EntryController as ctrl">
+        <entry-form data="ctrl.entry"></entry-form>
+    </div>
     <div class="container">
         <div ng-controller="LexiconController as ctrl">
             <!-- <input type="text" ng-model=""> -->
