@@ -12,20 +12,32 @@ function EntryController ($http) {
     this.submitEntry = function () {
         // communicate with the API
         console.log("testing");
-        console.log(this.entry);
-        $http
-        .post(API, "hello my friend")
-        .then(function() {
-            console.log("successful");
-        });
+        // console.log(this.entry);
+        // $http
+        // .post(API, "hello my friend")
+        // .then(function() {
+        //     console.log("successful");
+        // });
         
-        // Code to store inputs in json:
-            // var fs = require('fs');
-
-            // fs.appendFile('../database/lexicon.json', ' This is my text.', function (err) {
-            // if (err) throw err;
-            // console.log('Updated!');
-            // });
+        const low = require('lowdb')
+        const FileSync = require('lowdb/adapters/FileSync')
+        // import low from 'lowdb';
+        // import FileSync from 'lowdb/adapters/FileSync';
+        
+        const dbFileName = "database/lexicon.json";
+        const adapter = new FileSync(dbFileName)
+        const db = low(adapter)
+        
+        // Add another entry
+        db.get('entries')
+        .push({
+            "title": "Number 1",
+            "topics": ["ajax", "rails"],
+            "content": "This is very complicated",
+            "link": "",
+            "mainCategory": "Node.js"
+            })
+        .write();
     };
 };
 
