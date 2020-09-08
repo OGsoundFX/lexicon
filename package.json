@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/OGsoundFX/lexicon/issues"
   },
-  "homepage": "https://github.com/OGsoundFX/lexicon#readme"
+  "homepage": "https://github.com/OGsoundFX/lexicon#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
