@@ -1,9 +1,14 @@
-<form>
-    <input type="text" placeholder="Title">
-    <input type="text" placeholder="Topic1">
-    <input type="text" placeholder="Topic2">
-    <input type="text" placeholder="Topic3">
-    <input type="text" placeholder="Content">
-    <input type="text" placeholder="Link">
-    <input type="text" placeholder="Main category">
+<pre> {{ form.data | json }} </pre>
+<!-- <pre> {{ orderForm | json }} </pre> -->
+
+<form name="orderForm">
+    <input required="" name="title" type="text" ng-model="form.data.title" placeholder="Title">
+    <input required="" name="topic" type="text" ng-model="form.data.topics" placeholder="Topic1">
+    <input name="topic" type="text" ng-model="form.data.topics" placeholder="Topic2">
+    <input name="topic" type="text" ng-model="form.data.topics" placeholder="Topic3">
+    <textarea required="" name="text" ng-model="form.data.content" placeholder="Content" name="" id="" cols=42 rows="5"></textarea>
+    <!-- <input name="text" id="textarea" type="textarea" ng-model="form.data.content" placeholder="Content"> -->
+    <input name="link" type="text" ng-model="form.data.link" placeholder="Link">
+    <input required="" name="category" type="text" ng-model="form.data.mainCategory" placeholder="Main category">
+    <button type="submit">Submit</button>
 </form>

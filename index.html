@@ -13,7 +13,7 @@
     </div>
 
     <div class="container" ng-controller="EntryController as ctrl">
-        <entry-form data="ctrl.entry"></entry-form>
+        <entry-form data="ctrl.entry" submit="ctrl.submitEntry();"></entry-form>
     </div>
     <div class="container">
         <div ng-controller="LexiconController as ctrl">
@@ -29,5 +29,6 @@
     <script src="js/lexicon-controller.js"></script>
     <script src="js/entry-form.directivs.js"></script>
     <script src="js/entry-controller.js"></script>
+    <script src="js/form-controller.js"></script>
 </body>
 </html>

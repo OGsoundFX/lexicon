@@ -3,7 +3,8 @@ function entryForm () {
         restrict: 'E',
         scope: {},
         bindToController: {
-            data: '='
+            data: '=',
+            submit: '&',
         },
         controller: 'FormController as form',
         templateUrl: 'templates/entry-form.html'

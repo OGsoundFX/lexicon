@@ -6,6 +6,9 @@ function EntryController () {
     link: "",
     mainCategory: ""
     };
+    this.submitEntry = function () {
+        // communicate with the API
+    };
 };
 
 
