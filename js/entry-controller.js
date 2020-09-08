@@ -1,7 +1,7 @@
 function EntryController ($http) {
     const ctrl = this;
     const API = '../database/lexicon.json';
-    
+
     this.entry = {
     title: "",
     topics: [],
@@ -12,7 +12,7 @@ function EntryController ($http) {
     this.submitEntry = function () {
         // communicate with the API
         console.log("testing");
-
+        console.log(this.entry);
         $http
         .post(API, "hello my friend")
         .then(function() {
