@@ -10,12 +10,12 @@ function LexiconController ($http) {
 
 
 // Code to store inputs in json:
-    // var fs = require('fs');
+        // var fs = require('fs');
 
-    // fs.appendFile('mynewfile1.txt', ' This is my text.', function (err) {
-    // if (err) throw err;
-    // console.log('Updated!');
-    // });
+        // fs.appendFile('mynewfile1.txt', ' This is my text.', function (err) {
+        // if (err) throw err;
+        // console.log('Updated!');
+        // });
 
 
 // MODEL:

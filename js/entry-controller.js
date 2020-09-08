@@ -8,14 +8,15 @@ function EntryController () {
     };
     this.submitEntry = function () {
         // communicate with the API
-    // Code to store inputs in json:
-    console.log("testing");
-    var fs = require('fs');
+        console.log("testing");
+        
+        // Code to store inputs in json:
+            // var fs = require('fs');
 
-    fs.appendFile('../database/lexicon.json', ' This is my text.', function (err) {
-    if (err) throw err;
-    console.log('Updated!');
-    });
+            // fs.appendFile('../database/lexicon.json', ' This is my text.', function (err) {
+            // if (err) throw err;
+            // console.log('Updated!');
+            // });
     };
 };
 
