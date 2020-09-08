@@ -1,4 +1,7 @@
-function EntryController () {
+function EntryController ($http) {
+    const ctrl = this;
+    const API = '../database/lexicon.json';
+    
     this.entry = {
     title: "",
     topics: [],
@@ -9,6 +12,12 @@ function EntryController () {
     this.submitEntry = function () {
         // communicate with the API
         console.log("testing");
+
+        $http
+        .post(API, "hello my friend")
+        .then(function() {
+            console.log("successful");
+        });
         
         // Code to store inputs in json:
             // var fs = require('fs');
