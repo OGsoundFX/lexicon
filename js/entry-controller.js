@@ -1,6 +1,6 @@
 function EntryController ($http) {
     const ctrl = this;
-    const API = '../database/lexicon.json';
+    // const API = '../database/lexicon.json';
 
     this.entry = {
     title: "",
@@ -10,7 +10,8 @@ function EntryController ($http) {
     mainCategory: ""
     };
     this.submitEntry = function () {
-        console.log(testing);
+        console.log("testing");
+        console.log(ctrl.entry);
         // communicate with the API
         
         // const lowdbFileSync = 'lowdb/adapters/FileSync';
