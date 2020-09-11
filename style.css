@@ -2,3 +2,7 @@
     height: 50px;
     width: 400px;
 }
+
+form .ng-dirty.ng-invalid {
+    border: solid 2px red;
+}
