@@ -8,9 +8,9 @@ const db = low(adapter)
 // Add another entry
 db.get('entries')
 .push({
-    "title": "Here's a new entry",
-    "topics": ["ajax", "rails"],
-    "content": "This is very complicated",
+    "title": "npm",
+    "topics": ["node", "javascript", "manager"],
+    "content": "npm is node packet manager",
     "link": "",
     "mainCategory": "Node.js"
     })
