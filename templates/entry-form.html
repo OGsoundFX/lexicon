@@ -2,6 +2,9 @@
 <!-- <pre> {{ orderForm | json }} </pre> -->
 
 <form name="orderForm" ng-submit="form.onSubmit()">
+    <p ng-if="orderForm.title.$error.required === true && orderForm.title.$touched">Need to add name</p>
+    <p ng-if="orderForm.title.$error.minlength === true && orderForm.title.$touched">Name needs to be longer than 1 character</p>
+    <p ng-if="orderForm.title.$error.maxlength === true && orderForm.title.$touched">Name must not exceed 15 characters</p>
     <input required="" ng-minlength=2 ng-maxlength=15 name="title" type="text" ng-model="form.data.title" placeholder="Title">
     <input required="" name="topic" type="text" ng-model="form.data.topics" placeholder="Topic1">
     <input name="topic" type="text" ng-model="form.data.topics" placeholder="Topic2">

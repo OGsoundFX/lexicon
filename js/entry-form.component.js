@@ -3,8 +3,8 @@ const entryForm = {
         data: '=',
         submit: '&'
     },
-    controller: 'FormController',
-    templateUrl: 'templates/component-entry-form.html'
+    controller: 'FormController as form',
+    templateUrl: 'templates/entry-form.html'
 };
 
 angular
